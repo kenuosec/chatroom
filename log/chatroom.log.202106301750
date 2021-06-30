@@ -1,0 +1,10 @@
+time="2021-06-30T17:50:27+08:00" level=error msg="读取消息失败websocket: close 1006 (abnormal closure): unexpected EOF" func="chatroom/ctrl.(*Client).ReadMessage" file="/Users/liulu/go/src/chatroom/ctrl/servercontroller.go:61"
+time="2021-06-30T17:50:34+08:00" level=info msg="服务端广播消息" func=chatroom/service.HandlerTalk file="/Users/liulu/go/src/chatroom/service/service.go:16" content=jjjj username=liulu
+time="2021-06-30T17:50:34+08:00" level=error msg="发送消息失败write tcp 127.0.0.1:9000->127.0.0.1:53872: use of closed network connection" func=chatroom/service.HandlerUserList file="/Users/liulu/go/src/chatroom/service/service.go:62"
+time="2021-06-30T17:50:35+08:00" level=info msg="服务端广播消息" func=chatroom/service.HandlerTalk file="/Users/liulu/go/src/chatroom/service/service.go:16" content=jjjj username=liulu
+time="2021-06-30T17:50:36+08:00" level=info msg="服务端广播消息" func=chatroom/service.HandlerTalk file="/Users/liulu/go/src/chatroom/service/service.go:16" content=jjjj username=liulu
+time="2021-06-30T17:50:36+08:00" level=info msg="服务端广播消息" func=chatroom/service.HandlerTalk file="/Users/liulu/go/src/chatroom/service/service.go:16" content=jjjj username=liulu
+time="2021-06-30T17:50:38+08:00" level=error msg="读取消息失败websocket: close 1006 (abnormal closure): unexpected EOF" func="chatroom/ctrl.(*Client).ReadMessage" file="/Users/liulu/go/src/chatroom/ctrl/servercontroller.go:61"
+time="2021-06-30T17:50:47+08:00" level=error msg="发送消息失败write tcp 127.0.0.1:9000->127.0.0.1:53873: use of closed network connection" func=chatroom/service.HandlerUserList file="/Users/liulu/go/src/chatroom/service/service.go:62"
+time="2021-06-30T17:50:47+08:00" level=info msg="服务端广播消息" func=chatroom/service.HandlerTalk file="/Users/liulu/go/src/chatroom/service/service.go:16" content=888 username=liulu
+time="2021-06-30T17:50:50+08:00" level=error msg="读取消息失败websocket: close 1006 (abnormal closure): unexpected EOF" func="chatroom/ctrl.(*Client).ReadMessage" file="/Users/liulu/go/src/chatroom/ctrl/servercontroller.go:61"
