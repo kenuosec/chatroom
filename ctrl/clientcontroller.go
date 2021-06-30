@@ -2,13 +2,12 @@ package ctrl
 
 import (
 	"chatroom/model"
-	"log"
-	"net/url"
-
 	"fyne.io/fyne/v2/widget"
 	"github.com/gorilla/websocket"
 	"github.com/sirupsen/logrus"
 	"google.golang.org/protobuf/proto"
+	"log"
+	"net/url"
 )
 
 // 保存消息记录的切片
