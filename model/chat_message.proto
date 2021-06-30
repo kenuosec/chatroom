@@ -1,0 +1,10 @@
+syntax = "proto3";
+package config;
+option go_package = "/;model";
+
+message ChatRoomRequest {
+  string type = 1;
+  string user_name = 2;
+  string content = 3;
+  map<string,string> user_list = 4;
+}
