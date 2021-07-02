@@ -10,7 +10,7 @@ import (
 // Start 启动应用
 func Start() {
 	myApp := app.New()
-	myWindow := myApp.NewWindow("Form")
+	myWindow := myApp.NewWindow("ChatRoom")
 	UserNameEntry := widget.NewEntry()
 	ServerAddressEntry := widget.NewEntry()
 	StateLabel := widget.NewLabel("false")
@@ -23,9 +23,9 @@ func Start() {
 		client := ctrl.CreatConnection(UserNameEntry.Text, ServerAddressEntry.Text)
 		if client != nil {
 			StateLabel.Text = "OK"
+			// 建立连接后监听消息
+			go ctrl.ReadMessageClient()
 		}
-		// 建立连接后监听消息
-		go ctrl.ReadMessageClient()
 	})
 	sendButton := widget.NewButton("Send", func() {
 		// 发送消息获取最新列表以及广播消息
@@ -48,6 +48,6 @@ func Start() {
 		&widget.FormItem{Text: "", Widget: sendButton},
 	)
 	myWindow.SetContent(form)
-	myWindow.Resize(fyne.NewSize(150, 150))
+	myWindow.Resize(fyne.NewSize(300, 300))
 	myWindow.ShowAndRun()
 }
